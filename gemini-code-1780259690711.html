@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mzuvele High School | Lead By Example</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Elegant Serif Headings & Clean Sans-serif Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        schoolGreyDark: '#2F3542',  /* Primary Deep Charcoal Grey */
+                        schoolGreyLight: '#747D8C', /* Secondary Muted Grey */
+                        schoolYellow: '#ECCC68',    /* Bright School Accent Yellow */
+                        schoolYellowDark: '#FFA502',/* Deeper Gold/Yellow for hover states */
+                        schoolBlue: '#70A1FF',      /* Crisp Light Blue Accent */
+                        schoolBlueDark: '#1E90FF',  /* Deepened Light Blue for hover/links */
+                        schoolbgOff: '#F1F2F6',     /* Testimonials section background light grey */
+                    },
+                    fontFamily: {
+                        serifHeading: ['"Playfair Display"', 'serif'],
+                        sansBody: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+        .font-serif-heading { font-family: 'Playfair Display', serif; }
+        
+        /* Custom organic shape clipping to match modern aesthetic framing */
+        .organic-clip {
+            border-radius: 40% 60% 60% 40% / 40% 40% 60% 60%;
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-700 antialiased selection:bg-schoolGreyDark selection:text-white">
+
+    <!-- NAVIGATION HEADER -->
+    <nav class="w-full bg-white border-b border-gray-100 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 h-24 flex items-center justify-between">
+            <!-- Logo Branding Grid Zone -->
+            <a href="#" class="flex items-center gap-4 group">
+                <img src="LOGO.jpeg" alt="Mzuvele High School Crest" class="w-14 h-14 object-contain">
+                <div>
+                    <span class="block font-serif-heading text-2xl md:text-3xl text-schoolGreyDark font-bold tracking-tight leading-tight">Mzuvele Secondary School</span>
+                    <span class="block text-[10px] uppercase tracking-widest text-schoolGreyLight font-bold font-mono mt-0.5">LEAD BY EXAMPLE</span>
+                </div>
+            </a>
+            
+            <!-- Desktop Links Matrix -->
+            <div class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-600">
+                <a href="#" class="text-schoolBlueDark border-b-2 border-schoolBlueDark pb-1 transition-colors">Home</a>
+                <a href="#about" class="hover:text-schoolGreyDark transition-colors">About &amp; Admissions</a>
+                <a href="#features" class="hover:text-schoolGreyDark transition-colors">Code of Conduct</a>
+                <a href="#policies" class="hover:text-schoolGreyDark transition-colors">Policies &amp; Fees</a>
+                <a href="#gallery" class="hover:text-schoolGreyDark transition-colors">Gallery</a>
+                <a href="#testimonials" class="hover:text-schoolGreyDark transition-colors">Reviews</a>
+                <a href="#contact" class="hover:text-schoolGreyDark transition-colors">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION 1: VISUAL HERO DISPLAY -->
+    <section class="relative bg-white min-h-[calc(100vh-6rem)] flex items-center px-6 py-12 md:py-20 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center opacity-10 pointer-events-none" style="background-image: url('Coding%20and%20robotic%20class.jpeg');"></div>
+        
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center w-full relative z-10">
+            <div class="lg:col-span-6 flex justify-center order-2 lg:order-1">
+                <div class="relative p-4 w-full max-w-md md:max-w-lg aspect-square flex items-center justify-center">
+                    <div class="absolute inset-0 bg-schoolGreyDark organic-clip transform scale-105 shadow-xl opacity-95"></div>
+                    <div class="absolute inset-2 bg-gray-200 organic-clip overflow-hidden border-4 border-schoolYellow">
+                        <img src="Group%20photo%20of%20learners.jpg" alt="Mzuvele High School Learners Group" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+
+            <div class="lg:col-span-6 space-y-6 text-left order-1 lg:order-2 lg:pl-8">
+                <p class="text-schoolBlueDark font-mono text-xs uppercase tracking-widest font-bold">// THE OFFICIAL WEBSITE FOR</p>
+                <h1 class="font-serif-heading text-5xl md:text-6xl lg:text-7xl text-schoolGreyDark font-bold leading-[1.1]">
+                    Mzuvele <br>Secondary <br><span class="text-schoolGreyLight">School</span>
+                </h1>
+                <div class="w-16 h-[2px] bg-schoolYellow my-4"></div>
+                <p class="text-gray-600 text-sm md:text-base leading-relaxed max-w-xl">
+                    Mzuvele strives to maximise every learner's potential in order that she/he may serve society and experience personal fulfilment.
+                </p>
+                <div class="pt-4">
+                    <a href="#about" class="inline-block bg-schoolYellow hover:bg-schoolYellowDark text-schoolGreyDark font-bold text-xs uppercase tracking-widest px-8 py-4 transition-all duration-300 rounded shadow-md hover:shadow-lg">
+                        Learn More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 2: INSTITUTIONAL BIOGRAPHY SECTION -->
+    <section id="about" class="py-20 md:py-28 px-6 bg-white border-t border-gray-50">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+            <div class="lg:col-span-6 space-y-6">
+                <p class="text-schoolGreyLight font-mono text-xs uppercase tracking-widest font-bold">WHO WE ARE</p>
+                <h2 class="font-serif-heading text-4xl md:text-5xl text-schoolGreyDark font-bold">
+                    About <span class="text-schoolBlueDark">Us</span>
+                </h2>
+                <div class="w-16 h-[2px] bg-schoolYellow my-4"></div>
+                <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                    Mzuvele High School, situated at 54 P Mkhiwane Road, Kwamashu, Durban, 4359, operates as a public secondary school within the P.O. Kwamashu urban suburb of KwaZulu-Natal Province, South Africa.
+                </p>
+                <p class="text-gray-600 text-sm md:text-base leading-relaxed">
+                    Mzuvele strives to maximise every learner's potential in order that she/he may serve society and experience personal fulfilment through the development of her/his unique talents and abilities. The school strives to maintain its record of proven academic excellence by promoting a sound work ethic, independence of mind, critical thinking skills and the confidence to confront challenges.
+                </p>
+                <div class="pt-4">
+                    <a href="#admission" class="inline-block bg-schoolGreyDark hover:bg-black text-white font-semibold text-xs uppercase tracking-widest px-8 py-4 transition-all duration-300 rounded shadow-md">
+                        Admission Info
+                    </a>
+                </div>
+            </div>
+
+            <div class="lg:col-span-6 flex justify-center">
+                <div class="w-full max-w-md lg:max-w-full h-[450px] md:h-[550px] bg-gray-100 overflow-hidden shadow-lg border-2 border-schoolbgOff rounded-sm">
+                    <img src="Male%20educators.jpeg" alt="Mzuvele High School Educator Community Alignment" class="w-full h-full object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: ADMISSION CRITERIA & REGULATIONS -->
+    <section id="admission" class="py-20 bg-schoolbgOff border-t border-b border-gray-100 px-6">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <div class="lg:col-span-4 space-y-4">
+                <p class="text-schoolBlueDark font-mono text-xs uppercase tracking-widest font-bold">REGISTRATION PROCESS</p>
+                <h2 class="font-serif-heading text-4xl text-schoolGreyDark font-bold">Admissions</h2>
+                <div class="w-12 h-[2px] bg-schoolYellow"></div>
+                <p class="text-gray-500 text-sm leading-relaxed">
+                    The admission to public schools like Mzuvele High School follows a structured process outlined by the South African Schools Act of 1996.
+                </p>
+            </div>
+            <div class="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded shadow-sm space-y-3">
+                    <h3 class="font-serif-heading text-xl font-bold text-schoolGreyDark">Timeline &amp; Attendance</h3>
+                    <p class="text-gray-600 text-xs md:text-sm leading-relaxed">
+                        As stipulated, children between the ages of 7 and 15 are mandated to attend school. Registration for the upcoming academic year typically occurs between <strong>April and October</strong> of the preceding year, with specific age criteria for entry into Grade R and Grade 1.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded shadow-sm space-y-3">
+                    <h3 class="font-serif-heading text-xl font-bold text-schoolGreyDark">Required Documentation</h3>
+                    <p class="text-gray-600 text-xs md:text-sm leading-relaxed">
+                        Parents or guardians are required to submit essential documents, including birth certificates and immunization cards. Non-South African citizens must provide additional documentation. Provincial Learner Admissions Coordinators are available to provide guidance throughout the process.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: PERFORMANCE METRICS DISPLAY GRID -->
+    <section id="features" class="py-20 md:py-28 px-6 bg-white relative">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center gap-6 mb-16 border-b border-gray-100 pb-8">
+            <h2 class="font-serif-heading text-4xl md:text-5xl text-schoolGreyDark italic font-medium">Have a Query?</h2>
+            <a href="#contact" class="bg-schoolBlue hover:bg-schoolBlueDark text-schoolGreyDark font-mono text-xs uppercase tracking-widest font-bold px-8 py-4 transition-all duration-300 shadow rounded-sm">
+                Contact Us Now
+            </a>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
+            <!-- Metric Card 1 -->
+            <div class="space-y-4 group">
+                <div class="text-schoolBlueDark transition-transform duration-300 group-hover:translate-y-[-4px]">
+                    <svg class="w-10 h-10 stroke-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"/></svg>
+                </div>
+                <p class="text-[10px] uppercase font-mono font-bold tracking-widest text-schoolGreyLight">GRADUATES</p>
+                <h3 class="font-serif-heading text-2xl text-schoolGreyDark font-bold leading-tight">High Graduation Rates</h3>
+                <p class="text-gray-500 text-xs md:text-sm leading-relaxed">
+                    Consistently achieving a high on-time graduation rate, reflecting strong academic support and preparation for students' futures.
+                </p>
+                <a href="#about" class="inline-block text-[11px] font-mono font-bold uppercase tracking-wider text-schoolBlueDark hover:text-schoolBlue transition-colors pt-2">
+                    Learn More →
+                </a>
+            </div>
+
+            <!-- Metric Card 2 -->
+            <div class="space-y-4 group">
+                <div class="text-schoolYellowDark transition-transform duration-300 group-hover:translate-y-[-4px]">
+                    <svg class="w-10 h-10 stroke-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+                </div>
+                <p class="text-[10px] uppercase font-mono font-bold tracking-widest text-schoolGreyLight">ACADEMICS</p>
+                <h3 class="font-serif-heading text-2xl text-schoolGreyDark font-bold leading-tight">Academic Awards and Recognitions</h3>
+                <p class="text-gray-500 text-xs md:text-sm leading-relaxed">
+                    Earning prestigious awards in academic competitions and maintaining high standardized test scores, showcasing the school's academic excellence.
+                </p>
+                <a href="#about" class="inline-block text-[11px] font-mono font-bold uppercase tracking-wider text-schoolBlueDark hover:text-schoolBlue transition-colors pt-2">
+                    Learn More →
+                </a>
+            </div>
+
+            <!-- Metric Card 3 -->
+            <div class="space-y-4 group">
+                <div class="text-schoolBlueDark transition-transform duration-300 group-hover:translate-y-[-4px]">
+                    <svg class="w-10 h-10 stroke-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/></svg>
+                </div>
+                <p class="text-[10px] uppercase font-mono font-bold tracking-widest text-schoolGreyLight">ADDITIONAL SKILLS</p>
+                <h3 class="font-serif-heading text-2xl text-schoolGreyDark font-bold leading-tight">Extracurricular Success</h3>
+                <p class="text-gray-500 text-xs md:text-sm leading-relaxed">
+                    Winning championships and excelling in arts and community service, demonstrating the school's well-rounded extracurricular programs.
+                </p>
+                <a href="#about" class="inline-block text-[11px] font-mono font-bold uppercase tracking-wider text-schoolBlueDark hover:text-schoolBlue transition-colors pt-2">
+                    Learn More →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: SCHOOL FEES & UNIFORM POLICIES -->
+    <section id="policies" class="py-20 md:py-24 px-6 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+            <!-- School Fees Block -->
+            <div class="border border-gray-100 bg-gray-50/50 p-8 rounded-sm space-y-4">
+                <span class="text-[10px] font-mono bg-schoolBlueDark/10 text-schoolBlueDark px-3 py-1 rounded-full font-bold uppercase tracking-wider">FINANCIAL POLICY</span>
+                <h2 class="font-serif-heading text-3xl text-schoolGreyDark font-bold">School Fees</h2>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Mzuvele High School is a public school designated as <strong>Quintile 3</strong>, catering to a community with moderate socio-economic status. 
+                </p>
+                <blockquote class="border-l-4 border-schoolYellow pl-4 my-2 text-schoolGreyDark font-medium text-sm">
+                    As a no-fee institution, there are no tuition fees for students attending this school.
+                </blockquote>
+                <p class="text-gray-500 text-xs md:text-sm leading-relaxed">
+                    This quintile level school is eligible to receive up to R1,602 per learner from the Department of Education to cover operational expenses and educational resources.
+                </p>
+            </div>
+
+            <!-- School Uniform Block -->
+            <div class="border border-gray-100 bg-gray-50/50 p-8 rounded-sm space-y-4">
+                <span class="text-[10px] font-mono bg-schoolYellowDark/10 text-schoolYellowDark px-3 py-1 rounded-full font-bold uppercase tracking-wider">CAMPUS GUIDELINES</span>
+                <h2 class="font-serif-heading text-3xl text-schoolGreyDark font-bold">School Uniform</h2>
+                <p class="text-gray-600 text-sm leading-relaxed">
+                    Mzuvele High School uniform policies are established by the school’s governing body, aligned with the regulations outlined in the South African Schools Act of 1996 and provincial Education Department guidelines.
+                </p>
+                <p class="text-gray-500 text-xs md:text-sm leading-relaxed">
+                    These policies dictate the design, colors, and proper wearing of school uniforms to cultivate a sense of unity, equality, and discipline among students. For detailed information regarding Mzuvele High School’s uniform policy, individuals are encouraged to contact the school administration directly.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION: CAMPUS GALLERY -->
+    <section id="gallery" class="py-20 md:py-28 px-6 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto space-y-4 mb-16 text-left">
+            <p class="text-schoolBlueDark font-mono text-xs uppercase tracking-widest font-bold">LIFE AT MZUVELE</p>
+            <h2 class="font-serif-heading text-4xl md:text-5xl text-schoolGreyDark font-bold">
+                Our Campus <span class="text-schoolGreyLight">Gallery</span>
+            </h2>
+            <div class="w-16 h-[2px] bg-schoolYellow my-4"></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8">
+            
+            <!-- Gallery Item: Life science.png -->
+            <div class="group relative overflow-hidden bg-gray-900 rounded-sm shadow-md h-85 border-b-4 border-schoolGreyDark lg:col-span-3 sm:col-span-2">
+                <img src="Life science.png" alt="Learners conducting field evaluations and laboratory studies under direction of Mr Pheta" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-105 opacity-95 group-hover:opacity-85">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent flex flex-col justify-end p-6">
+                    <span class="text-[10px] font-mono text-schoolYellow uppercase tracking-wider mb-1">Practical Learning Matrix</span>
+                    <h4 class="font-serif-heading text-2xl font-bold text-white leading-tight">Life Sciences Practical Instruction under Mr. Pheta</h4>
+                </div>
+            </div>
+
+            <!-- Gallery Item: Coding and robotic class.jpeg -->
+            <div class="group relative overflow-hidden bg-gray-900 rounded-sm shadow-md h-85 border-b-4 border-schoolBlue">
+                <img src="Coding%20and%20robotic%20class.jpeg" alt="Students engaged in coding and robotics lessons" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110 opacity-90 group-hover:opacity-75">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
+                    <span class="text-[10px] font-mono text-schoolBlue uppercase tracking-wider mb-1">STEM Innovation</span>
+                    <h4 class="font-serif-heading text-xl font-bold text-white leading-tight">Coding &amp; Robotics Laboratory</h4>
+                </div>
+            </div>
+
+            <!-- Gallery Item: Laptop Sponsor Betsoftware.jpeg -->
+            <div class="group relative overflow-hidden bg-gray-900 rounded-sm shadow-md h-85 border-b-4 border-schoolYellow">
+                <img src="Laptop%20Sponsor%20Betsoftware.jpeg" alt="Betsoftware digital infrastructure sponsorship initiative" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110 opacity-90 group-hover:opacity-75">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
+                    <span class="text-[10px] font-mono text-schoolYellow uppercase tracking-wider mb-1">Partnerships</span>
+                    <h4 class="font-serif-heading text-xl font-bold text-white leading-tight">Betsoftware Laptop Sponsorship</h4>
+                </div>
+            </div>
+
+            <!-- Gallery Item: CHESS TRAINING.jpeg -->
+            <div class="group relative overflow-hidden bg-gray-900 rounded-sm shadow-md h-85 border-b-4 border-schoolBlueDark">
+                <img src="CHESS%20TRAINING.jpeg" alt="Learners practicing tactical moves during school chess training" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110 opacity-90 group-hover:opacity-75">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
+                    <span class="text-[10px] font-mono text-schoolBlue uppercase tracking-wider mb-1">Critical Thinking</span>
+                    <h4 class="font-serif-heading text-xl font-bold text-white leading-tight">Strategic Chess Development</h4>
+                </div>
+            </div>
+
+            <!-- Gallery Item: MSC CHESS WINNERS.jpeg -->
+            <div class="group relative overflow-hidden bg-gray-900 rounded-sm shadow-md h-85 border-b-4 border-schoolYellowDark">
+                <img src="MSC%20CHESS%20WINNERS.jpeg" alt="Mzuvele Chess Champions holding their competitive trophy" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110 opacity-90 group-hover:opacity-75">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
+                    <span class="text-[10px] font-mono text-schoolYellowDark uppercase tracking-wider mb-1">Achievements</span>
+                    <h4 class="font-serif-heading text-xl font-bold text-white leading-tight">MSC Chess Tournament Winners</h4>
+                </div>
+            </div>
+
+            <!-- Gallery Item: Soccer champions.jpg -->
+            <div class="group relative overflow-hidden bg-gray-900 rounded-sm shadow-md h-85 border-b-4 border-schoolGreyDark">
+                <img src="Soccer%20champions.jpg" alt="Mzuvele football lineup champions" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110 opacity-90 group-hover:opacity-75">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
+                    <span class="text-[10px] font-mono text-schoolYellow uppercase tracking-wider mb-1">Athletics</span>
+                    <h4 class="font-serif-heading text-xl font-bold text-white leading-tight">Soccer Champions Grid</h4>
+                </div>
+            </div>
+
+            <!-- Gallery Item: All seducators.jpeg -->
+            <div class="group relative overflow-hidden bg-gray-900 rounded-sm shadow-md h-85 border-b-4 border-schoolGreyLight">
+                <img src="All%20seducators.jpeg" alt="All educators standing proud with accomplishment certificates" class="w-full h-full object-cover object-center transition-transform duration-500 group-hover:scale-110 opacity-90 group-hover:opacity-75">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6">
+                    <span class="text-[10px] font-mono text-white uppercase tracking-wider mb-1">Staff Academic Merit</span>
+                    <h4 class="font-serif-heading text-xl font-bold text-schoolYellow leading-tight">Mzuvele Certified Educators</h4>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 4: TESTIMONIALS SECTION PANEL -->
+    <section id="testimonials" class="py-20 md:py-28 px-6 bg-schoolbgOff border-y border-gray-100">
+        <div class="max-w-7xl mx-auto text-center space-y-4 mb-16">
+            <div class="w-[2px] h-10 bg-schoolBlue mx-auto mb-4"></div>
+            <p class="text-schoolGreyLight font-mono text-xs uppercase tracking-widest font-bold">WHAT THEY SAY</p>
+            <h2 class="font-serif-heading text-4xl md:text-5xl text-schoolGreyDark font-bold">Testimonials</h2>
+            <p class="text-gray-500 text-xs md:text-sm">Read reviews from our wonderful parents and students!</p>
+        </div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Review Card 1 -->
+            <div class="bg-white p-8 rounded-sm shadow-sm flex flex-col justify-between items-center text-center space-y-6 border border-gray-100 border-t-4 border-t-schoolBlue">
+                <div class="text-gray-300">
+                    <svg class="w-10 h-10 mx-auto stroke-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                </div>
+                <p class="text-gray-500 text-xs md:text-sm font-mono leading-relaxed max-w-xs">
+                    "The best school in Newlands would recommend it to anyone who wants to apply for admission there."
+                </p>
+                <div>
+                    <h4 class="font-serif-heading text-lg font-bold text-schoolGreyDark">Mano Dlamini</h4>
+                    <span class="text-[10px] font-mono text-schoolGreyLight uppercase tracking-wider">Google Review</span>
+                </div>
+            </div>
+
+            <!-- Review Card 2 -->
+            <div class="bg-white p-8 rounded-sm shadow-sm flex flex-col justify-between items-center text-center space-y-6 border border-gray-100 border-t-4 border-t-schoolYellow">
+                <div class="text-gray-300">
+                    <svg class="w-10 h-10 mx-auto stroke-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                </div>
+                <p class="text-gray-500 text-xs md:text-sm font-mono leading-relaxed max-w-xs">
+                    "My daughter has just started high school here and has settled comfortably."
+                </p>
+                <div>
+                    <h4 class="font-serif-heading text-lg font-bold text-schoolGreyDark">Shannon Sewdayal</h4>
+                    <span class="text-[10px] font-mono text-schoolGreyLight uppercase tracking-wider">Google Review</span>
+                </div>
+            </div>
+
+            <!-- Review Card 3 -->
+            <div class="bg-white p-8 rounded-sm shadow-sm flex flex-col justify-between items-center text-center space-y-6 border border-gray-100 border-t-4 border-t-schoolBlue">
+                <div class="text-gray-300">
+                    <svg class="w-10 h-10 mx-auto stroke-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                </div>
+                <p class="text-gray-500 text-xs md:text-sm font-mono leading-relaxed max-w-xs">
+                    "Great school, had lots of fun and memories!!"
+                </p>
+                <div>
+                    <h4 class="font-serif-heading text-lg font-bold text-schoolGreyDark">Sayhiel Singh</h4>
+                    <span class="text-[10px] font-mono text-schoolGreyLight uppercase tracking-wider">Google Review</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: CONTACT INFORMATION CONNECT PANEL -->
+    <section id="contact" class="relative bg-schoolGreyDark text-white py-24 px-6 overflow-hidden">
+        <div class="absolute inset-0 bg-cover bg-center mix-blend-overlay opacity-15 pointer-events-none" style="background-image: url('Coding%20and%20robotic%20class.jpeg');"></div>
+        
+        <div class="max-w-7xl mx-auto relative z-10 space-y-16">
+            <div class="text-center space-y-4">
+                <div class="w-[2px] h-10 bg-schoolYellow mx-auto mb-2"></div>
+                <p class="text-schoolYellow font-mono text-xs uppercase tracking-widest font-bold">CONTACT US</p>
+                <h2 class="font-serif-heading text-4xl md:text-6xl font-bold tracking-tight">Get In Touch</h2>
+                <p class="text-white/80 text-xs md:text-sm max-w-md mx-auto font-light">
+                    Contact us via any of the following channels and we'll get back to you!
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 pt-8 border-t border-white/10 text-center md:text-left">
+                <!-- Column 1: Phone and Email -->
+                <div class="space-y-6">
+                    <h3 class="font-serif-heading text-2xl font-bold border-b border-white/10 pb-3 text-schoolYellow">Phone and Email</h3>
+                    <div class="space-y-4 text-xs md:text-sm text-white/90 font-light">
+                        <p><strong class="block font-medium text-white mb-1">Contact Numbers:</strong> Tel: 031 504 2228</p>
+                        <p><strong class="block font-medium text-white mb-1">Email Addresses:</strong> Mzuvelehigh@gmail.com</p>
+                    </div>
+                </div>
+
+                <!-- Column 2: Physical Location -->
+                <div class="space-y-6">
+                    <h3 class="font-serif-heading text-2xl font-bold border-b border-white/10 pb-3 text-schoolYellow">Location</h3>
+                    <div class="grid grid-cols-2 gap-4 text-xs md:text-sm text-white/90 font-light">
+                        <div>
+                            <strong class="block font-medium text-white mb-1">Physical Address:</strong>
+                            <p>54 P Mkhiwane Road<br>KwaMashu<br>Durban</p>
+                        </div>
+                        <div>
+                            <strong class="block font-medium text-white mb-1">Postal Code:</strong>
+                            <p>4359</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Column 3: Institutional Status & Administration Links -->
+                <div class="space-y-6">
+                    <h3 class="font-serif-heading text-2xl font-bold border-b border-white/10 pb-3 text-schoolYellow">Administration</h3>
+                    <div class="space-y-3">
+                        <div class="border border-white/10 bg-white/5 px-5 py-4 rounded-sm text-xs text-white/80">
+                            <span class="block uppercase tracking-widest font-mono font-bold text-schoolYellow mb-1">Quintile 3 Public School</span>
+                            Mzuvele Secondary is designated as an official No-Fee tuition institution.
+                        </div>
+                        <a href="#admission" class="group flex items-center justify-between border border-white/20 bg-white/5 hover:bg-white/10 px-5 py-4 transition-all duration-200 rounded-sm">
+                            <span class="text-xs uppercase tracking-widest font-bold text-schoolBlue">Voluntary Donations &amp; Support</span>
+                            <span class="text-lg font-bold text-schoolBlue group-hover:translate-x-1 transition-transform">▸</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ground Meta Copyright Segment -->
+            <div class="pt-8 border-t border-white/10 text-center text-[11px] text-white/60 font-mono flex flex-col md:flex-row justify-between items-center gap-4">
+                <p>© 2026 Mzuvele Secondary School. All Rights Reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="hover:text-schoolYellow transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-schoolYellow transition-colors">Terms of Use</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
